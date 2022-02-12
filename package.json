@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "cit341academind",
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
   "main": "app.js",
@@ -31,5 +31,13 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "pug": "^2.0.3",
     "sequelize": "^5.0.0-beta.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agneiting/cse341academindreadings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agneiting/cse341academindreadings/issues"
+  },
+  "homepage": "https://github.com/agneiting/cse341academindreadings#readme"
 }
