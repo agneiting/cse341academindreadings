@@ -1,6 +1,30 @@
-.login-form {
+.auth-container h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
+
+.auth-container .btn {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.auth-container {
   width: 20rem;
   max-width: 90%;
   margin: auto;
+  padding: 20px;
   display: block;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+a {
+  text-decoration: none;
+  color: #ffa14a;
+}
+
+.user-message {
+  max-width: 100%;
 }

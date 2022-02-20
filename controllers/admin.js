@@ -19,6 +19,7 @@ exports.postAddProduct = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
+  const featured = req.body.featured;
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -32,7 +33,8 @@ exports.postAddProduct = (req, res, next) => {
         title: title,
         imageUrl: imageUrl,
         price: price,
-        description: description
+        description: description,
+        featured: featured
       },
       errorMessage: errors.array()[0].msg,
       validationErrors: errors.array()
@@ -44,6 +46,7 @@ exports.postAddProduct = (req, res, next) => {
     price: price,
     description: description,
     imageUrl: imageUrl,
+    featured: featured,
     userId: req.user
   });
   product
@@ -110,6 +113,9 @@ exports.postEditProduct = (req, res, next) => {
   const updatedPrice = req.body.price;
   const updatedImageUrl = req.body.imageUrl;
   const updatedDesc = req.body.description;
+  const updatedFeatured = req.body.featured;
+  console.log('BELOW ME BRO');
+  console.log(updatedFeatured);
 
   const errors = validationResult(req);
 
@@ -124,6 +130,7 @@ exports.postEditProduct = (req, res, next) => {
         imageUrl: updatedImageUrl,
         price: updatedPrice,
         description: updatedDesc,
+        featured: updatedFeatured,
         _id: prodId
       },
       errorMessage: errors.array()[0].msg,
@@ -140,6 +147,7 @@ exports.postEditProduct = (req, res, next) => {
       product.price = updatedPrice;
       product.description = updatedDesc;
       product.imageUrl = updatedImageUrl;
+      product.featured = updatedFeatured;
       return product.save().then(result => {
         console.log('UPDATED PRODUCT!');
         res.redirect('/admin/products');

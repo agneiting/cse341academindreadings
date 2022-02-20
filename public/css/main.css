@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -7,7 +6,9 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color:#032326;
+  background: #F3F6F7;
 }
 
 main {
@@ -34,7 +35,7 @@ form {
 .main-header {
   width: 100%;
   height: 3.5rem;
-  background-color: #00695c;
+  background-color: #032326;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
@@ -66,7 +67,7 @@ form {
   background: transparent;
   border: none;
   text-decoration: none;
-  color: white;
+  color: #F3F6F7;
   cursor: pointer;
 }
 
@@ -75,7 +76,7 @@ form {
 .main-header__item a.active,
 .main-header__item button:hover,
 .main-header__item button:active {
-  color: #ffeb3b;
+  color: #FFA14A;
 }
 
 .mobile-nav {
@@ -85,7 +86,7 @@ form {
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: #F3F6F7;
   z-index: 10;
   padding: 2rem 1rem 1rem 2rem;
   transform: translateX(-100%);
@@ -126,18 +127,18 @@ form {
 .mobile-nav__item a.active,
 .mobile-nav__item button:hover,
 .mobile-nav__item button:active {
-  background: #00695c;
-  color: white;
+  background: #032326;
+  color: #F3F6F7;
   border-radius: 3px;
 }
 
 #side-menu-toggle {
-  border: 1px solid white;
+  border: 1px solid #F3F6F7;
   font: inherit;
   padding: 0.5rem;
   display: block;
   background: transparent;
-  color: white;
+  color: #F3F6F7;
   cursor: pointer;
 }
 
@@ -147,8 +148,8 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  color: #FFA14A;
+  border-color: #FFA14A;
 }
 
 .backdrop {
@@ -208,17 +209,17 @@ form {
   padding: 0.25rem 1rem;
   text-decoration: none;
   font: inherit;
-  border: 1px solid #00695c;
-  color: #00695c;
-  background: white;
+  border: 1px solid #032326;
+  color: #F3F6F7;
+  background: #032326;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #00695c;
-  color: white;
+  background-color: #FFA14A;
+  color: #032326;
 }
 
 .btn.danger {
@@ -229,7 +230,7 @@ form {
 .btn.danger:hover,
 .btn.danger:active {
   background: red;
-  color: white;
+  color: #F3F6F7;
 }
 
 .user-message {

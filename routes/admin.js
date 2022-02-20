@@ -26,7 +26,8 @@ router.post('/add-product', [
         .isFloat(),
     body('description')
         .isLength({ min: 3, max: 400 })
-        .trim()
+        .trim(),
+    body('featured')
     ], isAuth, adminController.postAddProduct
 );
 
@@ -43,7 +44,8 @@ router.post('/edit-product', [
         .isFloat(),
     body('description')
         .isLength({ min: 3, max: 400 })
-        .trim()
+        .trim(),
+    body('featured')
     ], isAuth, adminController.postEditProduct);
 
 router.post('/delete-product', isAuth, adminController.postDeleteProduct);
